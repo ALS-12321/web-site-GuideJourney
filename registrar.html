@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/registrar.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <div class="body">
+        <div class="veen">
+            <div class="login-btn splits">
+                <p>¿Ya eres usuario?</p>
+                <button class="active">Iniciar sesión</button>
+            </div>
+            <div class="rgstr-btn splits">
+                <p>¿No tienes una cuenta?</p>
+                <button>Registrarse</button>
+            </div>
+            <div class="wrapper">
+                <form id="login" action="login.php" method="POST" tabindex="500">
+                    <h3>Iniciar sesión</h3>
+                    <div class="mail">
+                        <input type="email" name="login_correo">
+                        <label>Correo electrónico</label>
+                    </div>
+                    <div class="passwd">
+                        <input type="password" name="login_contraseña">
+                        <label>Contraseña</label>
+                    </div>
+                    <div class="submit">
+                        <button type="submit" name="login" class="dark">Iniciar sesión</button>
+                    </div>
+                    <p><a href="registrar.html">Registrarse</a> si no tienes una cuenta.</p>
+                </form>
+            
+                <form id="register" action="registrar_usuario.php" method="POST" tabindex="502">
+                    <h3>Registrarse</h3>
+                    <div class="name">
+                        <input type="text" name="reg_nombre">
+                        <label>Nombre completo</label>
+                    </div>
+                    <div class="name">
+                        <input type="text" name="reg_dni">
+                        <label>DNI</label>
+                    </div>
+                    <div class="mail">
+                        <input type="email" name="reg_correo">
+                        <label>Correo electrónico</label>
+                    </div>
+                    <div class="uid">
+                        <input type="text" name="reg_user">
+                        <label>Nombre de usuario</label>
+                    </div>
+                    <div class="passwd">
+                        <input type="password" name="reg_contraseña">
+                        <label>Contraseña</label>
+                    </div>
+                    <div class="submit">
+                        <button class="dark" type="submit" name="registrar">Registrarse</button>
+                    </div>
+                    <p><a href="index.html">Regresar</a> a la página principal.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <style type="text/css">
+        .site-link {
+            padding: 5px 15px;
+            position: fixed;
+            z-index: 99999;
+            background: #fff;
+            box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+            right: 30px;
+            bottom: 30px;
+            border-radius: 10px;
+        }
+        .site-link img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+
+    <script type="text/javascript" src="js/registrar.js"></script>
+</body>
+</html>
